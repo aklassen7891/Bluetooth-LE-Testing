@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Clever Nachbau</string>
+    <string name="CLIENT_CHARACTERISTIC_CONFIG">00002902-0000-1000-8000-00805f9b34fb"</string>
+    <string name="CLIENT_CHARACTERISTIC_CONFIG_TEST">00002a00-0000-1000-8000-00805f9b34fb</string>
+    <string name="CLIENT_CHARACTERISTIC_CONFIG_TESTT">00002a01-0000-1000-8000-00805f9b34fb</string>
+    <string name="CLIENT_CHARACTERISTIC_CONFIG_TESTTT">00002a04-0000-1000-8000-00805f9b34fb</string>
+    <string name="CLIENT_CHARACTERISTIC_CONFIG_TESTTTT">00002a06-0000-1000-8000-00805f9b34fb</string>
+</resources>

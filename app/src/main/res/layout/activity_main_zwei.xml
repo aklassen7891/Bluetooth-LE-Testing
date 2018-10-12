@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context="android.kaviles.bletutorial.MainActivity">
+
+    <com.gjiazhe.panoramaimageview.PanoramaImageView
+        android:id="@+id/panorama_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img6"
+        app:piv_enablePanoramaMode="true"
+        app:piv_show_scrollbar="true"
+        app:piv_invertScrollDirection="false" />
+
+
+    <pl.bclogic.pulsator4droid.library.PulsatorLayout
+        android:id="@+id/pulsator"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:pulse_color="@color/colorBlue"
+        app:pulse_count="5"
+        app:pulse_duration="2500"
+        app:pulse_interpolator="Linear"
+        app:pulse_repeat="0"
+        app:pulse_startFromScratch="false"></pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+    <ImageView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/ble_search"
+        android:layout_width="250dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ble_search_ping_ping" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/scrollView"
+        >
+
+
+    </ScrollView>
+
+   <!-- <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:text="Suche Starten"
+        android:textColor="@android:color/white"
+        tools:background="@color/colorPrimary" />-->
+
+
+    <io.rmiri.buttonloading.ButtonLoading
+        android:id="@+id/btn_scan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignBottom="@+id/scrollView"
+        android:layout_centerHorizontal="true"
+        app:BL_backgroundColor="#80ffffff"
+        app:BL_circleColor="#00AFEF"
+        app:BL_circleColorSecond="#8000AFEF"
+        app:BL_enable="true"
+        app:BL_stateShow="normal"
+        app:BL_text="Suche Starten"
+        app:BL_textColor="#ffffff"
+        app:BL_textSize="14sp"
+        android:layout_margin="@dimen/activity_vertical_margin"/>
+
+    <TextView
+        android:id="@+id/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ble_search"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Suche Bluetoothgerät"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/subline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headline"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:autoText="false"
+        android:text="Bitte versetzen Sie Ihr Bluetooth-kompatibles Gerät in den Pairing Modus. (Siehe Bedienungsanleitung)"
+        android:textAlignment="center" />
+
+</RelativeLayout>

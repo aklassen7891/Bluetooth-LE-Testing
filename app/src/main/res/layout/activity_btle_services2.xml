@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Activity_BTLE_Services">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="15dp"
+        android:text="Licht:"
+        android:textSize="@dimen/text_size_large" />
+
+
+    <ImageView
+        android:id="@+id/licht_an"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignBottom="@+id/tv_name"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/ic_control_plus" />
+
+    <ImageView
+        android:id="@+id/licht_aus"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@+id/licht_an"
+        android:layout_toStartOf="@+id/licht_an"
+        app:srcCompat="@drawable/ic_control_minus" />
+
+
+    <com.sdsmdg.harjot.crollerTest.Croller
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="253dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="74dp"
+        app:back_circle_color="#EDEDED"
+        app:indicator_color="#0B3C49"
+        app:indicator_width="10"
+        app:is_continuous="true"
+        app:label_color="#000000"
+        app:main_circle_color="#FFFFFF"
+        app:max="255"
+        app:progress_primary_color="#0B3C49"
+        app:progress_secondary_color="#EEEEEE"
+        app:start_offset="0" />
+
+
+    <!--
+    <me.tankery.lib.circularseekbar.CircularSeekBar
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="112dp"
+        app:cs_circle_style = "round"
+        app:cs_circle_stroke_width = "12dp"
+        app:cs_pointer_stroke_width = "16dp"
+        app:cs_max= "255"/>
+
+
+    <ImageView
+        android:id="@+id/licht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        app:srcCompat="@drawable/ic_status_light_on" />-->
+
+
+</RelativeLayout>

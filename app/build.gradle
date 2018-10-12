@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "android.kaviles.bletutorial"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:23.2.1'
+
+    //https://android-arsenal.com/details/1/6394
+    implementation 'com.github.rasoulmiri:buttonloading:v1.0.8'
+
+    //https://android-arsenal.com/details/1/3873
+    implementation 'pl.bclogic:pulsator4droid:1.0.3'
+
+    //https://github.com/gjiazhe/PanoramaImageView
+    implementation 'com.gjiazhe:PanoramaImageView:1.0'
+
+    //https://android-arsenal.com/details/1/6724
+    implementation 'me.tankery.lib:circularSeekBar:1.1.7'
+
+    //optional https://android-arsenal.com/details/1/6053
+
+    //https://android-arsenal.com/details/1/5079
+    implementation 'com.sdsmdg.harjot:croller:1.0.7'
+
+}
