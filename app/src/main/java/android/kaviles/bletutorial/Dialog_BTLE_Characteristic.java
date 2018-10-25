@@ -57,6 +57,7 @@ public class Dialog_BTLE_Characteristic extends DialogFragment implements Dialog
             case -2:
                 // cancel button pressed
                 String ts = "F601A201FF100100";
+
                 //characteristic.setValue(Integer.toHexString(Integer.parseInt(edit.getText().toString())));
                 /*try {
                     characteristic.setValue(ts.getBytes("UTF-8"));
